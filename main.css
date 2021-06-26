@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;800&display=swap');
+
+html, body, h1, h2, p, ul, li, a, img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 5rem;
+    background-color: #ffffff;
+    color: #222222;
+}
+
+.ip {
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    position: relative;
+}
+
+.ip:hover {
+    background-color: #F8F8F8;
+    border-radius: 25px;
+}
+
+.ip_dropdown {
+    display: none;
+    border-radius: 10px;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F8F8F8;
+    box-shadow: 0px 0px 30px 1px #D3D3D3;
+    position: absolute;
+    top: 125%;
+    right: 0;
+    background: #ffffff;
+}
+
+.ip_dropdown p {
+    padding: .75rem 4rem .75rem 1rem;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.ip:hover .ip_dropdown {
+    display: block;
+}
+
+.po {
+    display: block;
+}
+
+
+
+
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0 2rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    max-width: 12%;
+}
+
+.airbnb {
+    fill: transparent;
+    stroke: rgb(255, 56, 92);
+}
+
+.logo h1 {
+    color: rgb(255, 56, 92);
+    font-weight: bold;
+    font-size: 1.75rem;
+    letter-spacing: -.085rem;
+}
+
+
+.navigation-container {
+    position: relative;
+
+    color: #1c1c1c;
+}
+
+.navigation-list {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    list-style-type: none;
+
+}
+
+.navigation-list-item {
+    position: relative;
+    font-size: .8rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    width: fit-content;
+}
+
+.navigation-list-item-button {
+    font-size: .9rem;
+    padding: 1rem 1.5rem;
+    border-radius: 999px;
+    font-weight: bold;
+    background-color: #fafafa;
+    box-shadow: 0px 0px 2px #eaebec;
+    color: #1c1c1c;
+}
+
+.navigation-list-item-button:hover {
+    cursor: pointer;
+}
+
+main {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 40%;
+    font-size: 1.5rem;
+    line-height: 1.456;
+    letter-spacing: 1px;
+}
+
+.right {
+    width: 50%;
+    height: fit-content;
+}
+
+.right ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.right ul li {
+    position: relative;
+}
+
+.right ul li:hover {
+    cursor: pointer;
+}
+
+.active::after {
+    content: '';
+    position: absolute;
+    background-color: #222222;
+    width: 100%;
+    height: .5vh;
+    bottom: -10px;
+    left: 0;
+}
+
+.search {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+    border: transparent;
+    border-radius: 15px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 0px 0px 9px #D3D3D3;
+}
+
+.search h2 {
+    font-size: .65rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.location {
+    margin-bottom: 1.5rem;
+    padding: .5rem;
+    padding-left: 1.5rem;
+    border-radius: 15px;
+}
+
+.checkInOut {
+    margin-bottom: 1.5rem;
+    padding: .5rem;
+    padding-left: 1.5rem;
+    border-radius: 15px;
+}
+
+.guests {
+    padding: .5rem;
+    padding-left: 1.5rem;
+    border-radius: 15px;
+}
+
+input {
+    width: 95%;
+    padding: .25rem;
+    padding-left: 0;
+    border: none;
+    font-size: 1rem;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+input:focus {
+    outline: none;
+}
+
+.travel {
+    margin-bottom: 7.5rem;
+}
+
+.travel ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.travel img {
+    display: block;
+    opacity: .6;
+}
+
+.la, .cairo {
+    position: relative;
+    margin-right: 1rem;
+}
+
+.la, .cairo, .berlin {
+    border-radius: 7px;
+    width:  100%;
+    height: 250px;
+    object-fit: cover;
+    position: relative;
+}
+
+.la:hover,
+.cairo:hover,
+.berlin:hover {
+    cursor: pointer;
+}
+
+.berlin {
+    object-position: bottom;
+}
+
+.la h2,
+.cairo h2,
+.berlin h2 {
+    position: absolute;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    text-align: center;
+    font-size: 2.25rem;
+    opacity: .5;
+    display: grid;
+    place-content: center;
+}
+
+.travelHeading {
+    border: 2px solid transparent;
+    border-radius: 7px;
+}
+
+.imagePlus {
+    border: 2px solid #f8f8f8;
+    border-radius: 7px;
+    transition: all .5s;
+}
+
+.transformAnimation {
+    transform: scale(1.015);
+    transition: all .5s;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.statementBanner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 6rem;
+}
+
+.statementBannerLeft {
+    width: 45%;
+}
+
+.statementBannerLeftHeading {
+    padding-bottom: .75rem;
+}
+
+.statementBannerLeftParagraph {
+    line-height: 1.7;
+}
+
+.statementBannerRight {
+    width: 45%;
+}
+
+.statementBannerRightHeading {
+    padding-bottom: .75rem;
+}
+
+.statementBannerRightParagraph {
+    line-height: 1.7;
+}
+
+.hostHero {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 6rem;
+    padding-top: 6rem;
+    border-top-style: solid;
+    border-top-width: .1px;
+    border-top-color: rgb(221, 221, 221);
+}
+
+.hostHeroLeft {
+    width: 35%;
+}
+
+.hostHeroLeftHeading {
+    margin-bottom: 1.5rem;
+}
+
+.hostHeroLeftButton {
+    padding: .5rem 1.5rem;
+    background-color: #ffffff;
+    border-color: #222222;
+    border-radius: 7px;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.hostHeroLeftButton:hover {
+    cursor: pointer;
+    background-color: #f8f8f8;
+    animation: all .5s;
+}
+
+.hostHeroRight {
+    width: 40%;
+    margin-right: 5%;
+    line-height: 1.7;
+}
+
+.hostHeroRightParagraph {
+
+}
+
+.more {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: .8rem;
+    border-top-style: solid;
+    border-top-width: .1px;
+    border-top-color: rgb(221, 221, 221);
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+.more ul {
+    list-style-type: none;
+}
+
+.more ul li {
+    padding-bottom: 1.5rem;
+}
+
+.moreHeading {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+footer {
+    font-size: .8rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-top-style: solid;
+    border-top-width: .1px;
+    border-top-color: rgb(221, 221, 221);
+    padding: 1.5rem 0;
+}
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+}
+
+footer ul li {
+    padding-right: 1rem;
+}

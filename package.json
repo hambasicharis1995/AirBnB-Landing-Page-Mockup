@@ -1,0 +1,19 @@
+{
+  "name": "airbnb",
+  "version": "1.0.0",
+  "description": "AirBnB landing page mockup.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Haris Hambasic",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hambasicharis1995/AirBnB-Landing-Page-Mockup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hambasicharis1995/AirBnB-Landing-Page-Mockup/issues"
+  },
+  "homepage": "https://github.com/hambasicharis1995/AirBnB-Landing-Page-Mockup#readme"
+}
